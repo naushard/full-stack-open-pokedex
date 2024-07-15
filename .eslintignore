@@ -4,4 +4,5 @@ dist/
 .eslintrc.js
 e2e-tests/example.spec.js
 tests-examples/demo-todo-app.spec.js
+tests-examples/demo-todo-app.js
 playwright.config.js
