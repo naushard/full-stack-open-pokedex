@@ -12,15 +12,11 @@ describe('Pokedex', () => {
     await page.goto('http://localhost:8080/')
     await expect(page.getByText('charmander')).toBeVisible()
 
-    await page.getByRole('link', { name: 'charmander' }).click()
-    
+    await page.getByRole('link', { name:'charmander' }).click()
     await expect(page.getByText('charmander')).toBeVisible()
     await expect(page.getByText('next')).toBeVisible()
     await expect(page.getByText('previous')).toBeVisible()
     await expect(page.getByText('home')).toBeVisible()
-    
-
-
   })
 
 
